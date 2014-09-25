@@ -218,18 +218,8 @@ end
 function spawnTurrets1()
 	--Spring.Echo("Spawns Turrents 1")
 	npc = {
-		--TOP--
-		{name="torreta",x=500,z=3310,unitID=10500,rot="east",},
-		{name="torreta",x=500,z=1510,unitID=10501,rot="east",},
-		--MID--
-		{name="torreta",x=1186,z=3915,unitID=10502,rot="east",},
-		{name="torreta",x=2091,z=3015,unitID=10503,rot="east",},
-		--BOT--
-		{name="torreta",x=1810,z=4620,unitID=10504,rot="east",},
-		{name="torreta",x=3610,z=4620,unitID=10505,rot="east",},
-		
-		{name="torrun",x=930,z=2400,unitID=10506,rot="east",},
-		{name="torrun",x=2500,z=4067,unitID=10507,rot="north",},
+		{name="torrun",x=1164,z=1254,unitID=10506,rot="east",},
+		{name="torrun",x=1164,z=3860,unitID=10507,rot="north",},
 	}
 	for i=1, #npc do
 		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
@@ -239,18 +229,8 @@ end
 function spawnTurrets2()
 	--Spring.Echo("Spawns Turrents 2")
 	npc = {
-		--BOT--
-		{name="torreta",x=3315,z=500,unitID=10508,rot="west",},
-		{name="torreta",x=1520,z=500,unitID=10509,rot="west",},
-		--MID--
-		{name="torreta",x=3935,z=1186,unitID=10510,rot="west",},
-		{name="torreta",x=3020,z=2105,unitID=10511,rot="west",},
-		--TOP--
-		{name="torreta",x=4628,z=1810,unitID=10512,rot="west",},
-		{name="torreta",x=4628,z=3610,unitID=10513,rot="west",},
-		
-		{name="torrun",x=4200,z=2700,unitID=10514,rot="west",},
-		{name="torrun",x=2630,z=1043,unitID=10515,rot="south",},
+		{name="torrun",x=3980,z=1254,unitID=10514,rot="west",},
+		{name="torrun",x=3980,z=3860,unitID=10515,rot="south",},
 	}
 	for i=1, #npc do
 		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)

@@ -8,7 +8,7 @@ local mapinfo = {
 	shortname   = "airport",
 	description = "Jauria Map",
 	author      = "Xtien",
-	version     = "0.2",
+	version     = "0.4",
 	--mutator   = "deployment";
 	--mapfile   = "", --// location of smf/sm3 file (optional)
 	modtype     = 3, --// 1=primary, 0=hidden, 3=map
@@ -206,8 +206,8 @@ local mapinfo = {
 	},
 
 	teams = {
-		[0] = {startPos = {x = 330, z = 4632}},
-		[1] = {startPos = {x = 4800, z = 460}},
+		[0] = {startPos = {x = 120, z = 2555}},
+		[1] = {startPos = {x = 5010, z = 2555}},
 		--[2] = {startPos = {x = 0, z = 0}},
 		--[3] = {startPos = {x = 0, z = 0}},
 	},
