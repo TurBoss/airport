@@ -6,7 +6,7 @@ local features = {
 	buildinglist = {
 	},
 	objectlist = {
-		{ name = 'parking'	,x = 3560	,z = 3448	,rot = "0" },
+		{ name = 'parking'	,x = 3560	,z = 3048	,rot = "0" },
 
 	},
 	metalspots = {

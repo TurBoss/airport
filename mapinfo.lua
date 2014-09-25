@@ -7,7 +7,7 @@ local mapinfo = {
 	name        = "airport",
 	shortname   = "airport",
 	description = "Jauria Map",
-	author      = "PerroTron",
+	author      = "Xtien",
 	version     = "0.2",
 	--mutator   = "deployment";
 	--mapfile   = "", --// location of smf/sm3 file (optional)
@@ -29,7 +29,7 @@ local mapinfo = {
 
 
 	smf = {
-		minheight = 120,
+		minheight = 160,
 		maxheight = -80,
 		--smtFileName0 = "",
 		--smtFileName1 = "",
