@@ -14,10 +14,10 @@ local featureDef	=	{
 	blocking				=false,
 	upright				=true,
 	hitdensity				=50,
-	energy				=0,
+	energy				=20,
 
 	damage				=200,
-	flammable				=false,
+	flammable				=true,
 	reclaimable				=false,
 	indestructible			=false,
 	noselect=true,
