@@ -1,5 +1,5 @@
 model = {
-   radius = 50,
+   radius = 1,
    --height = 100,
    midpos = {0,15,0}, -- model center offset
    --tex1 = "central.png", -- same as S3O texture 1
