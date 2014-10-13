@@ -178,10 +178,10 @@ function spawnTurrets1()
 	npc = {
 		{name="earthturret",x=1164,z=1254,unitID=10506,rot="east",},
 		{name="earthturret",x=1145,z=3905,unitID=10507,rot="east",},
-		{name="mortero",x=3459,z=3315,unitID=10519,rot="west",},
-		{name="metralleta",x=4672,z=2366,unitID=10511,rot="west",},
-		{name="metralleta",x=4672,z=2721,unitID=10512,rot="west",},
-		{name="metralleta",x=3300,z=2219,unitID=10516,rot="west",},
+		{name="mortero",x=1745,z=1799,unitID=10508,rot="east",},
+		{name="metralleta",x=443,z=2380,unitID=10509,rot="east",},
+		{name="metralleta",x=443,z=2749,unitID=10510,rot="east",},
+		{name="metralleta",x=1859,z=2864,unitID=10513,rot="east",},
 	}
 	for i=1, #npc do
 		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
@@ -193,26 +193,13 @@ function spawnTurrets2()
 	npc = {
 		{name="earthturret",x=3980,z=1254,unitID=10514,rot="west",},
 		{name="earthturret",x=3965,z=3865,unitID=10515,rot="west",},
-		{name="mortero",x=1745,z=1799,unitID=10508,rot="east",},
-		{name="metralleta",x=443,z=2380,unitID=10509,rot="east",},
-		{name="metralleta",x=443,z=2749,unitID=10510,rot="east",},
-		{name="metralleta",x=1859,z=2864,unitID=10513,rot="east",},
+		{name="mortero",x=3459,z=3315,unitID=10519,rot="west",},
+		{name="metralleta",x=4672,z=2366,unitID=10511,rot="west",},
+		{name="metralleta",x=4672,z=2721,unitID=10512,rot="west",},
+		{name="metralleta",x=3300,z=2219,unitID=10516,rot="west",},
 		
 	}
 	for i=1, #npc do
 		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)
 	end
-end
-
-function unselectableTurrents()
-	Spring.SetUnitNoSelect(10500, true)
-	Spring.SetUnitNoSelect(10501, true)
-	Spring.SetUnitNoSelect(10502, true)
-	Spring.SetUnitNoSelect(10503, true)
-	Spring.SetUnitNoSelect(10504, true)
-	Spring.SetUnitNoSelect(10505, true)
-	Spring.SetUnitNoSelect(10506, true)
-	Spring.SetUnitNoSelect(10507, true)
-	Spring.SetUnitNoSelect(10508, true)
-	Spring.SetUnitNoSelect(10509, true)
 end
