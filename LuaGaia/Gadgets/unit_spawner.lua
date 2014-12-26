@@ -167,10 +167,7 @@ function spawnNPC(i)
 		{name="mechabot",x=848,z=3473,unitID=10605,rot="west",},
 		
 	}
-	Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
-	--[[for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
-	end]]--
+	Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, gaiaTeamID, false, true, npc[i].unitID)
 end
 
 function spawnTurrets1()
@@ -184,7 +181,7 @@ function spawnTurrets1()
 		{name="metralleta",x=1859,z=2864,unitID=10513,rot="east",},
 	}
 	for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
+		Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
 	end
 end
 
@@ -200,6 +197,6 @@ function spawnTurrets2()
 		
 	}
 	for i=1, #npc do
-		Spring.CreateUnit (npc[i].name, npc[i].x, 100, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)
+		Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, 1, false, true, npc[i].unitID)
 	end
 end
