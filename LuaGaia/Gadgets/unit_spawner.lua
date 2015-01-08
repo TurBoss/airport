@@ -69,15 +69,18 @@ function gadget:Initialize ()
 		return
 	end
 	
-	timer1 = SpawnTimer.create(8000) --timer dramon
-	timer2 = SpawnTimer.create(8000)
-	timer3 = SpawnTimer.create(8000)
-	timer4 = SpawnTimer.create(8000)
-	timer5 = SpawnTimer.create(8000)
-	timer6 = SpawnTimer.create(8000)
-
+	--1800 == 1min
 	
-	timerc1 = SpawnTimer.create(9000) --timer cofre
+	timer1 = SpawnTimer.create(6000) --timer gusano
+	timer2 = SpawnTimer.create(6000) --timer gusano
+	
+	timer3 = SpawnTimer.create(5000) --timer escorpion
+	timer4 = SpawnTimer.create(5000) --timer escorpion
+	
+	timer5 = SpawnTimer.create(4000) --timer mechabot
+	timer6 = SpawnTimer.create(4000) --timer mechabot
+	
+	timerc1 = SpawnTimer.create(6000) --timer cofre
 	
 end
 
@@ -95,7 +98,6 @@ function gadget:GameStart()
 	spawnTurrets1()
 	spawnTurrets2()
 	
-	--unselectableTurrents()
 end
 
 function gadget:UnitDestroyed(unitID, unitDefID, unitTeam, attackerID, attackerDefID, attackerTeam)

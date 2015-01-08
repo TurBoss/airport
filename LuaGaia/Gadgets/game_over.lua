@@ -20,6 +20,14 @@ if (not gadgetHandler:IsSyncedCode()) then
 	return false
 end
 
+function gadget:Initialize ()
+	if Game.gameName ~= "Jauria RTS" then
+		Spring.Echo ("PLAY WITH Jauria RTS!!")
+		gadgetHandler:RemoveGadget()
+		return
+	end
+end
+
 function gadget:GameOver()
 	-- remove ourself after successful game over
 	gadgetHandler:RemoveGadget()
