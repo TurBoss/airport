@@ -11,6 +11,8 @@ function gadget:GetInfo()
 end
 
 local GameOver = Spring.GameOver
+local GetTeamUnits = Spring.GetTeamUnits
+local DestroyUnit = Spring.DestroyUnit
 
 -- synced only
 
@@ -29,5 +31,19 @@ function gadget:UnitDestroyed(unitID, unitDefID, unitTeamID, attackerID, attacke
 	if unitID == 1000 or unitID == 1001 then
 		Spring.SendLuaUIMsg("gameover" .. team[0])
 		GameOver(team)
+		destroyall(team[0])
+	end
+end
+
+function destroyall(team)
+	if team == "0" then
+		team = 1
+	elseif team == "1" then
+		team = 0
+	end
+	toDestroy = GetTeamUnits(team)
+	Spring.Echo(toDestroy)
+	for u in pairs(toDestroy) do
+		DestroyUnit(toDestroy[u], true)
 	end
 end

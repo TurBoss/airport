@@ -146,9 +146,9 @@ function spawnFeature(i)
 		
 	}
 	
-		local yPlacement	= Spring.GetGroundHeight(feature[i].x,feature[i].z)+500
-		mineralID[i] = Spring.CreateFeature(feature[i].name, feature[i].x, yPlacement, feature[i].z, feature[i].rot)
-		--Spring.Echo(mineralID[i])
+	local yPlacement	= Spring.GetGroundHeight(feature[i].x,feature[i].z)+500
+	mineralID[i] = Spring.CreateFeature(feature[i].name, feature[i].x, yPlacement, feature[i].z, feature[i].rot)
+	--Spring.Echo(mineralID[i])
 end
 
 
@@ -173,12 +173,12 @@ end
 function spawnTurrets1()
 	--Spring.Echo("Spawns Turrents 1")
 	npc = {
-		{name="earthturret",x=1164,z=1254,unitID=10506,rot="east",},
-		{name="earthturret",x=1145,z=3905,unitID=10507,rot="east",},
-		{name="mortero",x=1745,z=1799,unitID=10508,rot="east",},
-		{name="metralleta",x=443,z=2380,unitID=10509,rot="east",},
-		{name="metralleta",x=443,z=2749,unitID=10510,rot="east",},
-		{name="metralleta",x=1859,z=2864,unitID=10513,rot="east",},
+		{name="earthturret",x=1164,z=1254,unitID=10501,rot="east",},
+		{name="earthturret",x=1145,z=3905,unitID=10502,rot="east",},
+		{name="mortero",x=1745,z=1799,unitID=10503,rot="east",},
+		{name="metralleta",x=443,z=2380,unitID=10504,rot="east",},
+		{name="metralleta",x=443,z=2749,unitID=10505,rot="east",},
+		{name="metralleta",x=1859,z=2864,unitID=10506,rot="east",},
 	}
 	for i=1, #npc do
 		Spring.CreateUnit (npc[i].name, npc[i].x, 0, npc[i].z, npc[i].rot, 0, false, true, npc[i].unitID)
@@ -188,12 +188,12 @@ end
 function spawnTurrets2()
 	--Spring.Echo("Spawns Turrents 2")
 	npc = {
-		{name="earthturret",x=3980,z=1254,unitID=10514,rot="west",},
-		{name="earthturret",x=3965,z=3865,unitID=10515,rot="west",},
-		{name="mortero",x=3459,z=3315,unitID=10519,rot="west",},
-		{name="metralleta",x=4672,z=2366,unitID=10511,rot="west",},
-		{name="metralleta",x=4672,z=2721,unitID=10512,rot="west",},
-		{name="metralleta",x=3300,z=2219,unitID=10516,rot="west",},
+		{name="earthturret",x=3980,z=1254,unitID=10507,rot="west",},
+		{name="earthturret",x=3965,z=3865,unitID=10508,rot="west",},
+		{name="mortero",x=3459,z=3315,unitID=10509,rot="west",},
+		{name="metralleta",x=4672,z=2366,unitID=10510,rot="west",},
+		{name="metralleta",x=4672,z=2721,unitID=10511,rot="west",},
+		{name="metralleta",x=3300,z=2219,unitID=10512,rot="west",},
 		
 	}
 	for i=1, #npc do
