@@ -50,7 +50,7 @@ function destroyall(team)
 		team = 0
 	end
 	toDestroy = GetTeamUnits(team)
-	Spring.Echo(toDestroy)
+	--Spring.Echo(toDestroy)
 	for u in pairs(toDestroy) do
 		DestroyUnit(toDestroy[u], true)
 	end
