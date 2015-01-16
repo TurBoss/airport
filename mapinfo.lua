@@ -8,7 +8,7 @@ local mapinfo = {
 	shortname   = "airport",
 	description = "Jauria Map",
 	author      = "Xtien",
-	version     = "0.6",
+	version     = "0.7",
 	--mutator   = "deployment";
 	--mapfile   = "", --// location of smf/sm3 file (optional)
 	modtype     = 3, --// 1=primary, 0=hidden, 3=map
