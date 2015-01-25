@@ -178,6 +178,7 @@ function rewardTeam(unitID, unitDefID, unitTeam, attackerID, attackerDefID, atta
 							elseif unitName == "hatlas" then
 								Spring.Echo("Atlas killed, giving 702 of metal to " .. name)
 								Spring.AddTeamResource(attackerTeam, "m", 702)
+							end
 						end
 					end
 				end
